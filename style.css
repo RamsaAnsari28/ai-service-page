@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #0f172a;
+  background: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Header / Hero */
+.header {
+  background: linear-gradient(135deg, rgba(15,23,42,0.45), rgba(37,99,235,0.45)),
+              url('ai-hero.jpg') no-repeat center center/cover;
+  color: white;
+  padding: 90px 20px;
+}
+
+.header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+}
+
+.header p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.95;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 12px 26px;
+  text-decoration: none;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* Sections */
+.section {
+  padding: 70px 20px;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #1e3a8a;
+}
+
+.light {
+  background: #eaf2ff; /* soft light blue */
+}
+
+/* AI Section Highlight */
+.ai-section {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+}
+
+.ai-section h2 {
+  color: white;
+}
+
+/* Grid & Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #f8fbff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.12);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.18);
+}
+
+/* Service Icons */
+.service-icon {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+  padding: 12px;
+  background: #eff6ff;
+  border-radius: 30%;
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover .service-icon {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+/* AI Demo */
+.ai-demo {
+  max-width: 500px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(255,255,255,0.95);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ai-demo input {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.ai-icon {
+  width: 60px;
+  margin: 0 auto 5px;
+}
+
+.ai-result {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #bfdbfe;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f8fbff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.12);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #c7d2fe;
+}
+
+/* Footer */
+.footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+}

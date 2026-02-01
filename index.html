@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CortexIQ Consulting - AI Solutions</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Header / Hero -->
+  <header class="header">
+    <div class="container">
+      <h1>Build Smarter. Grow Faster. With AI.</h1>
+      <p>CortexIQ Consulting helps businesses design and deploy practical AI solutions that automate workflows, unlock insights, and drive real growth.</p>
+      <a href="#contact" class="btn" id="consultBtn">Get Your Free AI Consultation</a>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="grid">
+        <div class="card">
+        <img src="ai-strategy.jpg" alt="AI Strategy Icon" class="service-icon"/>
+          <h3>AI Strategy & Roadmapping</h3>
+          <p>We evaluate your business, identify high-impact AI opportunities, and create a clear, step-by-step AI adoption plan.</p>
+        </div>
+        <div class="card">
+            <img src="ai-products.jpg" alt="AI Products Icon" class="service-icon"/>
+          <h3>Custom AI Products</h3>
+          <p>From chatbots to intelligent dashboards, we design and build AI-powered tools tailored to your business needs.</p>
+        </div>
+        <div class="card">
+            <img src="ai-data.jpg" alt="AI Data Icon" class="service-icon"/>
+          <h3>Data & Machine Learning</h3>
+          <p>We turn raw data into actionable insights using machine learning models that support smarter decision-making.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Approach -->
+  <section class="section light">
+    <div class="container">
+      <h2>Our AI-First Approach</h2>
+      <p>
+        We use modern AI tools to rapidly prototype, test, and improve digital products. This allows us to move faster, iterate smarter, and deliver high-quality solutions focused on real business impact.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mini AI Demo -->
+ <section class="section ai-section">
+    <div class="container">
+      <h2>Try Our AI Recommendation (Demo)</h2>
+      <p>Describe your business problem and get a suggested AI solution.</p>
+
+      <div class="ai-demo">
+          <img src="ai-robot.jpg" alt="AI Icon" class="ai-icon"/>
+        <input type="text" id="aiInput" placeholder="e.g. I want to automate customer support" />
+        <button class="btn" id="aiBtn">Get Recommendation</button>
+        <p id="aiResult" class="ai-result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="section light">
+    <div class="container">
+      <h2>How We Work</h2>
+      <p>
+        Our process is simple: Discover your goals, Design the right AI solution, and Deploy it with continuous support. We keep everything transparent, efficient, and aligned with your business outcomes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>Have a project in mind? Let’s talk about how AI can help your business grow.</p>
+
+      <!-- Working Form (Formspree) -->
+      <form action="https://formspree.io/f/xpqlqykp" method="POST" class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 BlueMindAI Consulting. Built by Ramsha Ansari for the AI Developer Challenge.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
